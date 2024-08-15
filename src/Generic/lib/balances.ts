@@ -1,5 +1,5 @@
 import BigNumber from "big.js"
-import { Horizon } from "stellar-sdk"
+import { Horizon } from "lantah-sdk"
 import { BalanceLine } from "./account"
 
 function addThousandsSeparators(digits: string, thousandsSeparator: string) {

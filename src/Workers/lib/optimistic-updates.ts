@@ -1,6 +1,6 @@
 // tslint:disable member-ordering
 import { Observable, Subject } from "observable-fns"
-import { Horizon, ServerApi } from "stellar-sdk"
+import { Horizon, ServerApi } from "lantah-sdk"
 
 export interface OptimisticUpdate<T> {
   apply(base: T): T

@@ -1,4 +1,4 @@
-import { Asset } from "stellar-sdk"
+import { Asset } from "lantah-sdk"
 
 /*
  * Quick orderbook cheat sheet:
@@ -13,7 +13,7 @@ import { Asset } from "stellar-sdk"
  * returned by horizon server, the order of asks(T) & bids(T') is the same as well.
  */
 
-// @types/stellar-sdk types seem wrong
+// @types/lantah-sdk types seem wrong
 export interface FixedOrderbookOffer {
   price_r: {
     n: number
@@ -23,7 +23,7 @@ export interface FixedOrderbookOffer {
   amount: string
 }
 
-// @types/stellar-sdk types seem wrong
+// @types/lantah-sdk types seem wrong
 export interface FixedOrderbookRecord {
   asks: FixedOrderbookOffer[]
   bids: FixedOrderbookOffer[]

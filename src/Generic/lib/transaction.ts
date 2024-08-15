@@ -11,7 +11,7 @@ import {
   xdr,
   Networks,
   MuxedAccount
-} from "stellar-sdk"
+} from "lantah-sdk"
 import { Account } from "~App/contexts/accounts"
 import { workers } from "~Workers/worker-controller"
 import { WrongPasswordError, CustomError } from "./errors"

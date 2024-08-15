@@ -1,6 +1,6 @@
 import { TransferServerInfo } from "@satoshipay/stellar-transfer"
 import { multicast, Observable, ObservableLike } from "observable-fns"
-import { Asset, Horizon, ServerApi } from "stellar-sdk"
+import { Asset, Horizon, ServerApi } from "lantah-sdk"
 import { trackError } from "~App/contexts/notifications"
 import { AccountData } from "../lib/account"
 import { FixedOrderbookRecord } from "../lib/orderbook"

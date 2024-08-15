@@ -10,8 +10,8 @@ import {
   Transaction,
   LiquidityPoolAsset,
   getLiquidityPoolId
-} from "stellar-sdk"
-import { OfferAsset } from "stellar-sdk/lib/types/offer"
+} from "lantah-sdk"
+import { OfferAsset } from "lantah-sdk/lib/types/offer"
 import { AssetRecord } from "../hooks/stellar-ecosystem"
 import { AccountData, BalanceLine } from "./account"
 
@@ -37,7 +37,7 @@ export function getAllSources(tx: Transaction) {
   ])
 }
 
-// FIXME: Wait for proper solution in stellar-sdk: <https://github.com/stellar/js-stellar-sdk/pull/403>
+// FIXME: Wait for proper solution in lantah-sdk: <https://github.com/stellar/js-lantah-sdk/pull/403>
 export function isNotFoundError(error: any): error is NotFoundError {
   return (
     (error && error instanceof Error && error.message === "Request failed with status code 404") ||

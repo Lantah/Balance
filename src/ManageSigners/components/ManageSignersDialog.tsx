@@ -1,5 +1,5 @@
 import React from "react"
-import { Horizon } from "stellar-sdk"
+import { Horizon } from "lantah-sdk"
 import { Account } from "~App/contexts/accounts"
 import { trackError } from "~App/contexts/notifications"
 import * as routes from "~App/routes"
