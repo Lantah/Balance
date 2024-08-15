@@ -14,10 +14,10 @@ export function useConversionOffers(
     ? offers.map(offer => ({
         ...offer,
         amount: BigNumber(offer.price).eq(0)
-          ? BigNumber(0).toFixed(7)
+          ? BigNumber(0).toFixed(6)
           : BigNumber(offer.amount)
               .div(offer.price)
-              .toFixed(7)
+              .toFixed(6)
       }))
     : offers
 

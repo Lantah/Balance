@@ -52,7 +52,7 @@ export const TransferContent = React.memo(function TransferContent(props: Transf
         type={props.type}
       />
     )
-  } else if (state.step === "xlm-deposit") {
+  } else if (state.step === "gram-deposit") {
     return <PurchaseLumens onCloseDialog={props.onClose} />
   } else if (state.step === "auth-pending") {
     return (
@@ -103,7 +103,7 @@ export const TransferSidebar = React.memo(function TransferSidebar(props: Transf
     return <TransferInitial.Sidebar type={type} />
   } else if (state.step === "enter-values") {
     return <TransferDetailsForm.Sidebar type={type} />
-  } else if (state.step === "xlm-deposit") {
+  } else if (state.step === "gram-deposit") {
     return <PurchaseLumens.Sidebar />
   } else if (state.step === "auth-pending") {
     return <TransferAuthentication.Sidebar />

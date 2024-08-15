@@ -108,7 +108,7 @@
         "primary": "Reserva campo de datos",
         "secondary": "Campos de datos de la cuenta"
       },
-      "headline": "Valor en XLM",
+      "headline": "Valor en GRAM",
       "open-orders-reserve": {
         "primary": "Reserva órdenes abiertas",
         "secondary": "Reserva por orden"
@@ -134,7 +134,7 @@
       },
       "trustline-reserve": {
         "primary": "Reserva de líneas de confianza",
-        "secondary": "Por cada saldo (no XLM)"
+        "secondary": "Por cada saldo (no GRAM)"
       }
     }
   },

@@ -58,7 +58,7 @@ function AssetLogo(props: AssetLogoProps) {
 
   if (props.asset.isNative()) {
     return (
-      <Avatar alt="Stellar Lumens (XLM)" className={`${className} ${classes.xlmAvatar}`} style={props.style}>
+      <Avatar alt="Lantah Grams (GRAM)" className={`${className} ${classes.xlmAvatar}`} style={props.style}>
         <LumenIcon className={classes.icon} />
       </Avatar>
     )

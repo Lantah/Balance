@@ -17,11 +17,11 @@ export const SingleBalance = React.memo(function SingleBalance(props: SingleBala
   const balance = BigNumber(props.balance).abs()
 
   const formattingOptions: BalanceFormattingOptions = props.untrimmed
-    ? { minimumSignificants: 7 }
+    ? { minimumSignificants: 6 }
     : balance.eq(0)
     ? { maximumDecimals: 0, minimumDecimals: 0 }
     : balance.gt(0) && balance.lt(0.0001)
-    ? { maximumDecimals: 7, minimumDecimals: 7 }
+    ? { maximumDecimals: 6, minimumDecimals: 6 }
     : balance.lt(1000)
     ? { maximumDecimals: 4, minimumDecimals: 0 }
     : { maximumDecimals: 0, minimumDecimals: 0 }
@@ -76,7 +76,7 @@ export const MultipleBalances = React.memo(function MultipleBalances(props: Mult
       {balances.map((balance: BalanceLine, index) => (
         <React.Fragment key={stringifyAsset(balancelineToAsset(balance))}>
           <Balance
-            assetCode={balance.asset_type === "native" ? "XLM" : balance.asset_code}
+            assetCode={balance.asset_type === "native" ? "GRAM" : balance.asset_code}
             balance={balance.balance}
             inline={props.inline}
             style={{ marginRight: index < balances.length - 1 ? "1.2em" : undefined }}

@@ -151,7 +151,7 @@ function CreateAccountOperation(props: OperationProps<Operation.CreateAccount>) 
       />
       <SummaryDetailsField
         label={t("operations.create-account.summary.funding-amount")}
-        value={<SingleBalance assetCode="XLM" balance={String(startingBalance)} untrimmed />}
+        value={<SingleBalance assetCode="GRAM" balance={String(startingBalance)} untrimmed />}
       />
       {source ? (
         <SummaryDetailsField

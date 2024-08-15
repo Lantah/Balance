@@ -85,7 +85,7 @@ const NativeBalanceItems = React.memo(function NativeBalanceItems(props: NativeB
   return (
     <>
       <BalanceDetailsListItem
-        key="XLM"
+        key="GRAM"
         balance={props.balance}
         onClick={() => props.onOpenAssetDetails(Asset.native())}
         style={{
@@ -97,7 +97,7 @@ const NativeBalanceItems = React.memo(function NativeBalanceItems(props: NativeB
         testnet={props.account.testnet}
       />
       <BalanceDetailsListItem
-        key="XLM:spendable"
+        key="GRAM:spendable"
         balance={{
           ...props.balance,
           balance: BigNumber(props.balance.balance).eq(0)

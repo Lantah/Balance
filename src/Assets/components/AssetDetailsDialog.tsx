@@ -359,7 +359,7 @@ function AssetDetailsDialog(props: Props) {
             style={{ position: "relative", zIndex: 1 }}
             title={
               asset.isNative()
-                ? "Stellar Lumens (XLM)"
+                ? "Lantah Grams (GRAM)"
                 : metadata && metadata.name
                 ? `${metadata.name} (${asset.getCode()})`
                 : asset.getCode()

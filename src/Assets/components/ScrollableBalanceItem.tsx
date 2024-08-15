@@ -126,7 +126,7 @@ function BalanceItem(props: BalanceItemProps, ref: React.Ref<any>) {
       <AssetLogo asset={asset} className={classes.logo} testnet={props.testnet} />
       <div className={classes.balance}>
         <span className={classes.assetCode}>
-          {props.balance.asset_type === "native" ? "XLM" : props.balance.asset_code}
+          {props.balance.asset_type === "native" ? "GRAM" : props.balance.asset_code}
         </span>
         <SingleBalance assetCode="" balance={props.balance.balance} inline />
       </div>

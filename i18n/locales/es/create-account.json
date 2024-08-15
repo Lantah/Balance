@@ -42,7 +42,7 @@
       "title": "Importar existente"
     },
     "multisig-account": {
-      "explanation-long": "Asegúrate de que la cuenta a agregar tenga al menos 2 XLM, así puedes ser agregado como co-firmante.",
+      "explanation-long": "Asegúrate de que la cuenta a agregar tenga al menos 2 GRAM, así puedes ser agregado como co-firmante.",
       "explanation-short": "Asegúrate de que la cuenta tiene fondos.",
       "helper-text": "La dirección de la cuenta Multisig (clave pública)",
       "placeholder": "GABCDEFGH…",

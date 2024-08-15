@@ -57,15 +57,15 @@
       "deposit": {
         "headline": "Fund your account",
         "info": {
-          "1": "Purchase Stellar lumens (XLM) or deposit assets to fund your account. Send USD from your bank account, ETH from your Ethereum wallet, etc.",
-          "2": "Solar acts as a client to the service offered by the asset issuer only."
+          "1": "Purchase GRAM coins or deposit assets to fund your account.",
+          "2": "Balance acts as a client to the service offered by the asset issuer only."
         }
       },
       "withdrawal": {
         "headline": "What to withdraw",
         "info": {
-          "1": "Withdraw assets in your account, like USD to your bank account or ETH to your Ethereum wallet.",
-          "2": "Solar acts as a client to the service offered by the asset issuer only."
+          "1": "Withdraw assets in your account.",
+          "2": "Balance acts as a client to the service offered by the asset issuer only."
         }
       }
     }
@@ -102,10 +102,10 @@
   },
   "purchase-lumens": {
     "sidebar": {
-      "headline": "Buy Stellar lumens",
+      "headline": "Buy GRAM coin",
       "info": {
-        "1": "We offer options to buy lumens that do not involve a Stellar asset issuer.",
-        "2": " Stellar lumens (XLM) are the native tokens on the Stellar network. They are used to pay transaction fees, among other things."
+        "1": "We offer options to buy GRAM that does not involve a Lantah asset issuer.",
+        "2": "GRAM is the native coin on the Lantah network. They are used to pay transaction fees, among other things."
       }
     }
   },
