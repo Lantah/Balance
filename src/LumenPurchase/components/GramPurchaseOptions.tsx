@@ -31,12 +31,12 @@ async function fetchSignedMoonpayURL(account: Account) {
   return result.url
 }
 
-interface LumenDepositOptionsProps {
+interface GramDepositOptionsProps {
   account: Account
   onCloseDialog: () => void
 }
 
-function LumenDepositOptions(props: LumenDepositOptionsProps) {
+function GramDepositOptions(props: GramDepositOptionsProps) {
   const { account, onCloseDialog } = props
   const [isLegalNoteOpen, setIsLegalNoteOpen] = React.useState(false)
   const { t } = useTranslation()
@@ -58,8 +58,8 @@ function LumenDepositOptions(props: LumenDepositOptionsProps) {
     <List style={{ margin: "16px auto", maxWidth: 600 }}>
       <ListItem button onClick={openLegalNote}>
         <ListItemText
-          primary={t("account.purchase-lumens.moonpay.text.primary")}
-          secondary={t("account.purchase-lumens.moonpay.text.secondary")}
+          primary={t("account.purchase-grams.moonpay.text.primary")}
+          secondary={t("account.purchase-grams.moonpay.text.secondary")}
         />
         <ListItemIcon style={{ minWidth: 24, marginLeft: 12 }}>
           <OpenInNewIcon />
@@ -67,7 +67,7 @@ function LumenDepositOptions(props: LumenDepositOptionsProps) {
       </ListItem>
       <LegalConfirmation
         message={
-          <Trans i18nKey="account.purchase-lumens.moonpay.legal-confirmation">
+          <Trans i18nKey="account.purchase-grams.moonpay.legal-confirmation">
             You will be redirected to moonpay.io, a third-party service. The depositing process is operated by Moon Pay
             Ltd, not by Solar or SatoshiPay Ltd.
             <br />
@@ -83,4 +83,4 @@ function LumenDepositOptions(props: LumenDepositOptionsProps) {
   )
 }
 
-export default React.memo(LumenDepositOptions)
+export default React.memo(GramDepositOptions)

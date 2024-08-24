@@ -57,15 +57,15 @@
       "deposit": {
         "headline": "Finanzia il tuo account",
         "info": {
-          "1": "Acquista Stellar lumen (XLM) o deposita risorse per finanziare il tuo account. Invia EURO dal tuo conto bancario, ETH dal tuo portafoglio Ethereum, ecc",
-          "2": "Solar agisce solo come cliente del servizio offerto dall'emittente della risorsa."
+          "1": "Acquista Lantah Gram (GRAM) o deposita risorse per finanziare il tuo account. Invia EURO dal tuo conto bancario, ETH dal tuo portafoglio Ethereum, ecc",
+          "2": "Balance agisce solo come cliente del servizio offerto dall'emittente della risorsa."
         }
       },
       "withdrawal": {
         "headline": "Cosa ritirare",
         "info": {
           "1": "Preleva risorse dal tuo account, come EURO sul tuo conto bancario o ETH sul tuo portafoglio Ethereum.",
-          "2": "Solar agisce solo come cliente del servizio offerto dall'emittente della risorsa."
+          "2": "Balance agisce solo come cliente del servizio offerto dall'emittente della risorsa."
         }
       }
     }
@@ -100,12 +100,12 @@
       "no-withdrawable-assets": "Questo conto non contiene risorse prelevabili."
     }
   },
-  "purchase-lumens": {
+  "purchase-grams": {
     "sidebar": {
-      "headline": "Acquista Stellar lumen",
+      "headline": "Acquista Lantah gram",
       "info": {
-        "1": "Offriamo opzioni per acquistare lumen che non coinvolgono un emittente di risorse Stellar.",
-        "2": "I lumen stellari (XLM) sono i token nativi sulla rete Stellar. Vengono utilizzati per pagare le commissioni di transazione, tra le altre cose"
+        "1": "Offriamo opzioni per acquistare gram che non coinvolgono un emittente di risorse Lantah.",
+        "2": "I gram Lantah (GRAM) sono i token nativi sulla rete Lantah. Vengono utilizzati per pagare le commissioni di transazione, tra le altre cose"
       }
     }
   },

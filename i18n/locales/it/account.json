@@ -32,10 +32,10 @@
     "title": "Aggiungi risorsa"
   },
   "asset-details": {
-    "lumen": {
+    "gram": {
       "description": {
         "label": "Descrizione",
-        "text": "Il token nativo della rete Stellar.\n\n Ogni account della rete ha un saldo di lumens. I Lumens sono usati per pagare le commissioni sulle transazioni."
+        "text": "Il token nativo della rete Lantah.\n\n Ogni account della rete ha un saldo di grams. I Grams sono usati per pagare le commissioni sulle transazioni."
       }
     },
     "general": {
@@ -158,7 +158,7 @@
       "label": "Ritira"
     }
   },
-  "purchase-lumens": {
+  "purchase-grams": {
     "legal-confirmation": {
       "action": {
         "confirm": "Capisco"
@@ -167,11 +167,11 @@
     "moonpay": {
       "text": {
         "primary": "MoonPay",
-        "secondary": "Acquista Stellar Lumens immediatamente utilizzando la tua carta di debito / credito o Apple Pay"
+        "secondary": "Acquista Lantah Grams immediatamente utilizzando la tua carta di debito / credito o Apple Pay"
       },
       "legal-confirmation": "Verrai reindirizzato a moonpay.io, un servizio di terze parti. Il processo di deposito è gestito da Moon Pay Ltd, non da Solar o SatoshiPay Ltd. <1 /> <2 /> Contatta l'assistenza di moonpay.io per domande relative al tuo deposito."
     },
-    "title": "Acquista Stellar lumen"
+    "title": "Acquista Lantah Grams"
   },
   "remove-trustline": {
     "action": {
@@ -187,7 +187,7 @@
   "transactions": {
     "action": {
       "friendbot": {
-        "description": "Ottieni alcuni lumen di testnet gratuiti",
+        "description": "Ottieni alcuni gram di testnet gratuiti",
         "label": "Chiedi all'amicobot"
       },
       "navigate-to-deposit": {

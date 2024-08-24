@@ -4,7 +4,7 @@ import Avatar from "@material-ui/core/Avatar"
 import makeStyles from "@material-ui/core/styles/makeStyles"
 import { useAssetMetadata } from "~Generic/hooks/stellar"
 import { brandColor } from "~App/theme"
-import LumenIcon from "~Icons/components/Lumen"
+import GramIcon from "~Icons/components/Gram"
 
 const paddedAssetIconsRegex = /bitbondsto\.com/
 
@@ -58,8 +58,8 @@ function AssetLogo(props: AssetLogoProps) {
 
   if (props.asset.isNative()) {
     return (
-      <Avatar alt="Stellar Lumens (XLM)" className={`${className} ${classes.xlmAvatar}`} style={props.style}>
-        <LumenIcon className={classes.icon} />
+      <Avatar alt="Lantah Grams (GRAM)" className={`${className} ${classes.xlmAvatar}`} style={props.style}>
+        <GramIcon className={classes.icon} />
       </Avatar>
     )
   } else {

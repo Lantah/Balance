@@ -57,11 +57,11 @@ const useDetailContentStyles = makeStyles({
   }
 })
 
-interface LumenDetailProps {
+interface GramDetailProps {
   account: Account
 }
 
-const LumenDetails = React.memo(function LumenDetails(props: LumenDetailProps) {
+const GramDetails = React.memo(function GramDetails(props: GramDetailProps) {
   const accountData = useLiveAccountData(props.account.accountID, props.account.testnet)
   const classes = useDetailContentStyles()
   const { t } = useTranslation()
@@ -73,9 +73,9 @@ const LumenDetails = React.memo(function LumenDetails(props: LumenDetailProps) {
           <ReadOnlyTextfield
             disableUnderline
             fullWidth
-            label={t("account.asset-details.lumen.description.label")}
+            label={t("account.asset-details.gram.description.label")}
             multiline
-            value={t("account.asset-details.lumen.description.text")}
+            value={t("account.asset-details.gram.description.text")}
           />
         </CardContent>
       </Card>
@@ -359,7 +359,7 @@ function AssetDetailsDialog(props: Props) {
             style={{ position: "relative", zIndex: 1 }}
             title={
               asset.isNative()
-                ? "Stellar Lumens (XLM)"
+                ? "Lantah Grams (GRAM)"
                 : metadata && metadata.name
                 ? `${metadata.name} (${asset.getCode()})`
                 : asset.getCode()
@@ -387,7 +387,7 @@ function AssetDetailsDialog(props: Props) {
     >
       <VerticalLayout margin="0 4px" padding={`0 0 ${isSmallScreen ? 68 : 0}px`} shrink={0}>
         {asset.isNative() ? (
-          <LumenDetails account={props.account} />
+          <GramDetails account={props.account} />
         ) : (
           <AssetDetails account={props.account} asset={asset} metadata={metadata} />
         )}

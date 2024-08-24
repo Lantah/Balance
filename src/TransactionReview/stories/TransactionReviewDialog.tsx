@@ -49,7 +49,7 @@ interface SampleWebAuthProps {
 }
 
 function SampleWebAuth(props: SampleWebAuthProps) {
-  const horizon = new Server("https://horizon.stellar.org")
+  const horizon = new Server("https://orbitr.lantah.network")
   const WebAuth = useWebAuth()
 
   const promise = React.useMemo(

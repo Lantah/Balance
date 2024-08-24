@@ -32,7 +32,7 @@ import { InlineErrorBoundary, HideOnError } from "~Generic/components/ErrorBound
 const modules = {
   AssetDetailsDialog: import("../../Assets/components/AssetDetailsDialog"),
   BalanceDetailsDialog: import("../../Assets/components/BalanceDetailsDialog"),
-  LumenPurchaseDialog: import("../../LumenPurchase/components/LumenPurchaseDialog"),
+  GramPurchaseDialog: import("../../GramPurchase/components/GramPurchaseDialog"),
   TradeAssetDialog: import("../../Trading/components/TradingDialog"),
   TransferDialog: import("../../TransferService/components/ConnectedTransferDialog")
 }
@@ -58,8 +58,8 @@ const BalanceDetailsDialog = withFallback(
   React.lazy(() => modules.BalanceDetailsDialog),
   <ViewLoading />
 )
-const LumenPurchaseDialog = withFallback(
-  React.lazy(() => modules.LumenPurchaseDialog),
+const GramPurchaseDialog = withFallback(
+  React.lazy(() => modules.GramPurchaseDialog),
   <ViewLoading />
 )
 const TradeAssetDialog = withFallback(
@@ -135,7 +135,7 @@ const AccountPageContent = React.memo(function AccountPageContent(props: Account
   const showBalanceDetails = matchesRoute(router.location.pathname, routes.balanceDetails("*"))
   const showCreatePayment = matchesRoute(router.location.pathname, routes.createPayment("*"))
   const showDeposit = matchesRoute(router.location.pathname, routes.depositAsset("*"))
-  const showLumenPurchase = matchesRoute(router.location.pathname, routes.purchaseLumens("*"))
+  const showGramPurchase = matchesRoute(router.location.pathname, routes.purchaseGrams("*"))
   const showReceivePayment = matchesRoute(router.location.pathname, routes.receivePayment("*"))
   const showWithdrawal = matchesRoute(router.location.pathname, routes.withdrawAsset("*"))
 
@@ -171,7 +171,7 @@ const AccountPageContent = React.memo(function AccountPageContent(props: Account
       deposit: accountID ? () => router.history.push(routes.depositAsset(accountID)) : undefined,
       balanceDetails: accountID ? () => router.history.push(routes.balanceDetails(accountID)) : undefined,
       createPayment: accountID ? () => router.history.push(routes.createPayment(accountID)) : undefined,
-      purchaseLumens: accountID ? () => router.history.push(routes.purchaseLumens(accountID)) : undefined,
+      purchaseGrams: accountID ? () => router.history.push(routes.purchaseGrams(accountID)) : undefined,
       receivePayment: accountID ? () => router.history.push(routes.receivePayment(accountID)) : undefined,
       tradeAssets: accountID ? () => router.history.push(routes.tradeAsset(accountID)) : undefined,
       transactions: accountID ? () => router.history.push(routes.account(accountID)) : undefined,
@@ -287,7 +287,7 @@ const AccountPageContent = React.memo(function AccountPageContent(props: Account
         onClose={handleBackNavigation}
         onDeposit={navigateTo.deposit}
         onManageAssets={navigateTo.balanceDetails}
-        onPurchaseLumens={navigateTo.purchaseLumens}
+        onPurchaseGrams={navigateTo.purchaseGrams}
         onRename={performRenaming}
         onTrade={navigateTo.tradeAssets}
         onWithdraw={navigateTo.withdraw}
@@ -454,13 +454,13 @@ const AccountPageContent = React.memo(function AccountPageContent(props: Account
             </React.Suspense>
           </Dialog>
           <Dialog
-            open={showLumenPurchase}
+            open={showGramPurchase}
             fullScreen
             onClose={closeDialog}
             TransitionComponent={FullscreenDialogTransition}
           >
             <React.Suspense fallback={<ViewLoading />}>
-              <LumenPurchaseDialog account={props.account} onClose={closeDialog} />
+              <GramPurchaseDialog account={props.account} onClose={closeDialog} />
             </React.Suspense>
           </Dialog>
         </>

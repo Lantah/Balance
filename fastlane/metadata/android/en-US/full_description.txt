@@ -23,7 +23,7 @@ Add popular assets from our curated list with one click or add any custom asset 
 Trade Stellar assets on the DEX via the intuitive trading interface straight from the wallet. 
 
 <h2><b>Testnet Support</b></h2>
-Developers often need a quick way to test their features on the Stellar testnet. Enable the testnet features in Solar and use the friendbot to receive testnet lumens with just one click. 
+Developers often need a quick way to test their features on the Stellar testnet. Enable the testnet features in Solar and use the friendbot to receive testnet grams with just one click. 
 
 ----
 

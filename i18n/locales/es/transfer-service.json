@@ -100,12 +100,12 @@
       "no-withdrawable-assets": "Esta cuenta no contiene activos para retirar."
     }
   },
-  "purchase-lumens": {
+  "purchase-grams": {
     "sidebar": {
-      "headline": "Comprar Lúmenes Stellar",
+      "headline": "Comprar Grams Lantah",
       "info": {
-        "1": "Ofrecemos opciones para comrpar Lumenes Stellar que no involucran a un emisor de activos Stellar.",
-        "2": "Los Lúmenes Stellar (XLM) son las moneda nativa de la red Stellar. Se usan para pagar los costos de transacción, entre otras cosas."
+        "1": "Ofrecemos opciones para comrpar Grams Lantah que no involucran a un emisor de activos Lantah.",
+        "2": "Los Grams Lantah (GRAM) son las moneda nativa de la red Lantah. Se usan para pagar los costos de transacción, entre otras cosas."
       }
     }
   },

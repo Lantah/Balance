@@ -5,7 +5,7 @@ import { Account } from "~App/contexts/accounts"
 import { CustomError } from "~Generic/lib/errors"
 import { RefStateObject } from "~Generic/hooks/userinterface"
 import DepositSuccess from "./DepositSuccess"
-import PurchaseLumens from "./PurchaseLumens"
+import PurchaseGrams from "./PurchaseGrams"
 import TransferAuthentication from "./TransferAuthentication"
 import TransferKYCDenied from "./TransferKYCDenied"
 import TransferKYCPending from "./TransferKYCPending"
@@ -53,7 +53,7 @@ export const TransferContent = React.memo(function TransferContent(props: Transf
       />
     )
   } else if (state.step === "xlm-deposit") {
-    return <PurchaseLumens onCloseDialog={props.onClose} />
+    return <PurchaseGrams onCloseDialog={props.onClose} />
   } else if (state.step === "auth-pending") {
     return (
       <TransferAuthentication
@@ -104,7 +104,7 @@ export const TransferSidebar = React.memo(function TransferSidebar(props: Transf
   } else if (state.step === "enter-values") {
     return <TransferDetailsForm.Sidebar type={type} />
   } else if (state.step === "xlm-deposit") {
-    return <PurchaseLumens.Sidebar />
+    return <PurchaseGrams.Sidebar />
   } else if (state.step === "auth-pending") {
     return <TransferAuthentication.Sidebar />
   } else if (state.step === "kyc-pending") {

@@ -64,7 +64,7 @@ interface MenuProps {
   onAccountTransactions?: () => void
   onDeposit?: () => void
   onManageAssets?: () => void
-  onPurchaseLumens?: () => void
+  onPurchaseGrams?: () => void
   onTrade?: () => void
   onWithdraw?: () => void
   settings: SettingsContextType
@@ -94,7 +94,7 @@ function LiveAccountContextMenuItems(
         disabled={!isSigner || !props.onDeposit}
         icon={<CallReceivedIcon />}
         label={t("account.context-menu.deposit.label")}
-        onClick={closeAndCall(accountData.balances.length > 1 ? props.onDeposit : props.onPurchaseLumens)}
+        onClick={closeAndCall(accountData.balances.length > 1 ? props.onDeposit : props.onPurchaseGrams)}
       />
       <AccountContextMenuItem
         disabled={!activated || !props.onWithdraw}

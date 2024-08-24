@@ -32,10 +32,10 @@
     "title": "Add Asset"
   },
   "asset-details": {
-    "lumen": {
+    "gram": {
       "description": {
         "label": "Description",
-        "text": "The native token of the Stellar network.\n\n Every account on the network has a lumens balance. Lumens are used to pay transaction fees."
+        "text": "The native token of the Lantah network.\n\n Every account on the network has a gram balance. Grams are used to pay transaction fees."
       }
     },
     "general": {
@@ -164,7 +164,7 @@
       "note": "Your key is not yet a signer of the account. Please ask the account owner to add you."
     }
   },
-  "purchase-lumens": {
+  "purchase-grams": {
     "legal-confirmation": {
       "action": {
         "confirm": "I understand"
@@ -173,11 +173,11 @@
     "moonpay": {
       "text": {
         "primary": "MoonPay",
-        "secondary": "Buy Stellar Lumens instantly using your debit/credit card or Apple Pay"
+        "secondary": "Buy Lantah Grams instantly using your debit/credit card or Apple Pay"
       },
-      "legal-confirmation": " You will be redirected to moonpay.io, a third-party service. The depositing process is operated by Moon Pay Ltd, not by Solar or SatoshiPay Ltd. <1 /> <2 /> Please contact the moonpay.io support for inquiries related to your deposit."
+      "legal-confirmation": " You will be redirected to moonpay.io, a third-party service. The depositing process is operated by Moon Pay Ltd, not by Balance or Lantah Co. <1 /> <2 /> Please contact the moonpay.io support for inquiries related to your deposit."
     },
-    "title": "Buy Stellar lumens"
+    "title": "Buy Lantah Grams"
   },
   "remove-trustline": {
     "action": {
@@ -193,7 +193,7 @@
   "transactions": {
     "action": {
       "friendbot": {
-        "description": "Get some free testnet lumens",
+        "description": "Get some free testnet grams",
         "label": "Ask the friendbot"
       },
       "navigate-to-deposit": {
