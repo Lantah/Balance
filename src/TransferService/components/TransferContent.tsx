@@ -1,6 +1,6 @@
 import { AssetTransferInfo } from "@satoshipay/stellar-transfer"
 import React from "react"
-import { Asset, Transaction } from "stellar-sdk"
+import { Asset, Transaction } from "lantah-sdk"
 import { Account } from "~App/contexts/accounts"
 import { CustomError } from "~Generic/lib/errors"
 import { RefStateObject } from "~Generic/hooks/userinterface"

@@ -1,5 +1,5 @@
 import BigNumber from "big.js"
-import { Networks, Transaction } from "stellar-sdk"
+import { Networks, Transaction } from "lantah-sdk"
 import { WebauthData } from "@satoshipay/stellar-sep-10"
 import {
   fetchTransferInfos,

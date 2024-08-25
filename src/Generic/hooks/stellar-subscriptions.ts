@@ -2,7 +2,7 @@
 
 import { ObservableLike } from "observable-fns"
 import React from "react"
-import { Asset, Horizon, ServerApi } from "stellar-sdk"
+import { Asset, Horizon, ServerApi } from "lantah-sdk"
 import { Account } from "~App/contexts/accounts"
 import { createEmptyAccountData, AccountData, BalanceLine } from "../lib/account"
 import { FixedOrderbookRecord } from "../lib/orderbook"

@@ -1,7 +1,7 @@
 import { TFunction } from "i18next"
 import React from "react"
 import { Translation } from "react-i18next"
-import { Networks, Server, Transaction } from "stellar-sdk"
+import { Networks, Server, Transaction } from "lantah-sdk"
 import Zoom from "@material-ui/core/Zoom"
 import { Account } from "~App/contexts/accounts"
 import { SettingsContext, SettingsContextType } from "~App/contexts/settings"

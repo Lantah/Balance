@@ -1,6 +1,6 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { Asset, Operation, Server, Transaction } from "stellar-sdk"
+import { Asset, Operation, Server, Transaction } from "lantah-sdk"
 import Dialog from "@material-ui/core/Dialog"
 import ClearIcon from "@material-ui/icons/Clear"
 import SwapHorizIcon from "@material-ui/icons/SwapHoriz"

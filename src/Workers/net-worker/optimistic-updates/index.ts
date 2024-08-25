@@ -1,4 +1,4 @@
-import { Horizon, Operation, ServerApi, Transaction } from "stellar-sdk"
+import { Horizon, Operation, ServerApi, Transaction } from "lantah-sdk"
 import {
   accountDataUpdates,
   offerUpdates,
