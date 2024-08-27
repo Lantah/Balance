@@ -11,7 +11,7 @@ import {
   LiquidityPoolAsset,
   getLiquidityPoolId
 } from "@lantah/lantah-sdk"
-import { OfferAsset } from "lantah-sdk/lib/types/offer"
+import { OfferAsset } from "@lantah/lantah-sdk/lib/types/offer"
 import { AssetRecord } from "../hooks/stellar-ecosystem"
 import { AccountData, BalanceLine } from "./account"
 
