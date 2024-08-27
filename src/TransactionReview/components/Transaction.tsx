@@ -1,6 +1,6 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { Horizon, Memo, Transaction, Networks } from "lantah-sdk"
+import { Horizon, Memo, Transaction, Networks } from "@lantah/lantah-sdk"
 import Tooltip from "@material-ui/core/Tooltip"
 import CheckIcon from "@material-ui/icons/Check"
 import UpdateIcon from "@material-ui/icons/Update"

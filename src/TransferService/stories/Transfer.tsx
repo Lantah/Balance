@@ -1,6 +1,6 @@
 import BigNumber from "big.js"
 import React from "react"
-import { Asset } from "lantah-sdk"
+import { Asset } from "@lantah/lantah-sdk"
 import {
   AssetTransferInfo,
   KYCResponseType,

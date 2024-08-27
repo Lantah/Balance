@@ -1,5 +1,5 @@
 import { createStore, KeysData } from "key-store"
-import { Networks, Keypair, Transaction } from "lantah-sdk"
+import { Networks, Keypair, Transaction } from "@lantah/lantah-sdk"
 import { Messages } from "../../shared/ipc"
 import { WrongPasswordError } from "../../Generic/lib/errors"
 

@@ -1,7 +1,7 @@
 import BigNumber from "big.js"
 import React from "react"
 import { Trans, useTranslation } from "react-i18next"
-import { Operation, Server, ServerApi, Transaction } from "lantah-sdk"
+import { Operation, Server, ServerApi, Transaction } from "@lantah/lantah-sdk"
 import ExpansionPanel from "@material-ui/core/ExpansionPanel"
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails"
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary"

@@ -1,4 +1,4 @@
-import { Asset } from "lantah-sdk"
+import { Asset } from "@lantah/lantah-sdk"
 
 /*
  * Quick orderbook cheat sheet:

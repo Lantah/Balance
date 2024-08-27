@@ -1,6 +1,6 @@
 import React from "react"
 import Async from "react-promise"
-import { xdr, AccountResponse, Asset, Memo, Networks, Operation, Server, TransactionBuilder } from "lantah-sdk"
+import { xdr, AccountResponse, Asset, Memo, Networks, Operation, Server, TransactionBuilder } from "@lantah/lantah-sdk"
 import { storiesOf } from "@storybook/react"
 import { TransactionReviewDialogBody } from "../components/TransactionReviewDialog"
 import { Account } from "~App/contexts/accounts"

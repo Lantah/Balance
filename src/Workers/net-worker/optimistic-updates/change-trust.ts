@@ -1,5 +1,5 @@
 import BigNumber from "big.js"
-import { Asset, Horizon, LiquidityPoolAsset, Operation, Transaction } from "lantah-sdk"
+import { Asset, Horizon, LiquidityPoolAsset, Operation, Transaction } from "@lantah/lantah-sdk"
 import { balancelineToAsset, getLiquidityPoolIdFromAsset, stringifyAssetToReadableString } from "~Generic/lib/stellar"
 import { OptimisticAccountUpdate } from "../../lib/optimistic-updates"
 

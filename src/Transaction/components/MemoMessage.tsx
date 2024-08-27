@@ -1,5 +1,5 @@
 import React from "react"
-import { Memo } from "lantah-sdk"
+import { Memo } from "@lantah/lantah-sdk"
 
 interface Props {
   memo: Memo

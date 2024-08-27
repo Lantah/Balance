@@ -1,5 +1,5 @@
 import React from "react"
-import { Asset, Server, Transaction } from "lantah-sdk"
+import { Asset, Server, Transaction } from "@lantah/lantah-sdk"
 import { Account } from "~App/contexts/accounts"
 import { useTransferInfos } from "~Generic/hooks/transfer-server"
 import { useIsMobile, useDialogActions } from "~Generic/hooks/userinterface"

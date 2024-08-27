@@ -1,5 +1,5 @@
 import React from "react"
-import { Memo } from "lantah-sdk"
+import { Memo } from "@lantah/lantah-sdk"
 import { WithdrawalSuccessResponse } from "@satoshipay/stellar-transfer"
 import { trackError } from "~App/contexts/notifications"
 

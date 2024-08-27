@@ -1,5 +1,5 @@
 import JWT from "jsonwebtoken"
-import { Networks, Server, Transaction } from "lantah-sdk"
+import { Networks, Server, Transaction } from "@lantah/lantah-sdk"
 import * as WebAuth from "@satoshipay/stellar-sep-10"
 
 export async function fetchWebAuthChallenge(

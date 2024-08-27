@@ -1,5 +1,5 @@
 import BigNumber from "big.js"
-import { Asset, Operation, Transaction } from "lantah-sdk"
+import { Asset, Operation, Transaction } from "@lantah/lantah-sdk"
 
 export type PaymentSummary = Array<{
   asset: Asset
