@@ -1,5 +1,5 @@
 import ListSubheader from "@material-ui/core/ListSubheader"
-import { TransactionStellarUri } from "@stellarguard/stellar-uri"
+import { TransactionStellarUri } from "@lantah/lantah-uri"
 import React from "react"
 import { Transaction } from "@lantah/lantah-sdk"
 import { useRouter } from "~Generic/hooks/userinterface"
