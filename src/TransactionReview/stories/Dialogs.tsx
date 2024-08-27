@@ -1,7 +1,7 @@
 import React from "react"
 import Button from "@material-ui/core/Button"
 import { storiesOf } from "@storybook/react"
-import { Asset, Server, Transaction } from "lantah-sdk"
+import { Asset, Server, Transaction } from "@lantah/lantah-sdk"
 import TransactionReviewDialog from "../components/TransactionReviewDialog"
 import { Account, AccountsContext, AccountsProvider } from "~App/contexts/accounts"
 import { useLiveAccountData } from "~Generic/hooks/stellar-subscriptions"

@@ -1,4 +1,4 @@
-import { FederationServer, StellarTomlResolver } from "lantah-sdk"
+import { FederationServer, StellarTomlResolver } from "@lantah/lantah-sdk"
 import { AccountRecord } from "~Generic/lib/stellar-expert"
 import { AssetRecord } from "~Generic/lib/stellar-ticker"
 import { CustomError } from "~Generic/lib/errors"

@@ -14,7 +14,7 @@ import {
   WithdrawalTransaction
 } from "@satoshipay/stellar-transfer"
 import BigNumber from "big.js"
-import { Asset, Transaction } from "lantah-sdk"
+import { Asset, Transaction } from "@lantah/lantah-sdk"
 import { CustomError } from "~Generic/lib/errors"
 
 export namespace TransferStates {

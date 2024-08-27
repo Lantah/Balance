@@ -11,7 +11,7 @@ import {
   xdr,
   Networks,
   MuxedAccount
-} from "lantah-sdk"
+} from "@lantah/lantah-sdk"
 import { Account } from "~App/contexts/accounts"
 import { workers } from "~Workers/worker-controller"
 import { WrongPasswordError, CustomError } from "./errors"

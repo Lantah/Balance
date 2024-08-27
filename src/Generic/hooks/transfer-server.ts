@@ -4,7 +4,7 @@ import {
   TransferServer,
   TransferServerInfo
 } from "@satoshipay/stellar-transfer"
-import { Asset, Networks } from "lantah-sdk"
+import { Asset, Networks } from "@lantah/lantah-sdk"
 import { mapSuspendables } from "../lib/suspense"
 import { transferInfosCache } from "./_caches"
 import { useAccountHomeDomains } from "./stellar"

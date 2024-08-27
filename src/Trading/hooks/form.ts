@@ -1,5 +1,5 @@
 import BigNumber from "big.js"
-import { Asset, Horizon } from "lantah-sdk"
+import { Asset, Horizon } from "@lantah/lantah-sdk"
 import { AccountData, BalanceLine } from "~Generic/lib/account"
 import { formatBalance, BalanceFormattingOptions } from "~Generic/lib/balances"
 import { FormBigNumber, isValidAmount } from "~Generic/lib/form"

@@ -1,5 +1,5 @@
 import React from "react"
-import { Horizon, Operation, Server, Transaction, xdr } from "lantah-sdk"
+import { Horizon, Operation, Server, Transaction, xdr } from "@lantah/lantah-sdk"
 import { trackError } from "~App/contexts/notifications"
 import { Account } from "~App/contexts/accounts"
 import { SettingsContext, SettingsContextType } from "~App/contexts/settings"

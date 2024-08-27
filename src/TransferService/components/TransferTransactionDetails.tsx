@@ -2,7 +2,7 @@ import BigNumber from "big.js"
 import { nanoid } from "nanoid"
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { Transaction } from "lantah-sdk"
+import { Transaction } from "@lantah/lantah-sdk"
 import SendIcon from "@material-ui/icons/Send"
 import {
   Deposit,

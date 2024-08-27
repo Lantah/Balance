@@ -4,7 +4,7 @@ import Store from "electron-store"
 import { createStore } from "key-store"
 import { customAlphabet } from "nanoid"
 import * as path from "path"
-import { Keypair, Networks, Transaction } from "lantah-sdk"
+import { Keypair, Networks, Transaction } from "@lantah/lantah-sdk"
 import { expose } from "./_ipc"
 import { Messages } from "../shared/ipc"
 

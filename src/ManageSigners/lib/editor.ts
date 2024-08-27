@@ -1,4 +1,4 @@
-import { Horizon } from "lantah-sdk"
+import { Horizon } from "@lantah/lantah-sdk"
 import { AccountData } from "~Generic/lib/account"
 
 export namespace MultisigPresets {

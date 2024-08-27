@@ -1,5 +1,5 @@
 import LRUCache from "lru-cache"
-import { FederationServer } from "lantah-sdk"
+import { FederationServer } from "@lantah/lantah-sdk"
 import { workers } from "~Workers/worker-controller"
 import { CustomError } from "./errors"
 import { isNotFoundError } from "./stellar"

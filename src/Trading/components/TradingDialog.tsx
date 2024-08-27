@@ -1,6 +1,6 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { Asset, Horizon, Server, Transaction } from "lantah-sdk"
+import { Asset, Horizon, Server, Transaction } from "@lantah/lantah-sdk"
 import Box from "@material-ui/core/Box"
 import Typography from "@material-ui/core/Typography"
 import { Account } from "~App/contexts/accounts"

@@ -1,7 +1,7 @@
 import React from "react"
 import { TFunction } from "i18next"
 import { useTranslation } from "react-i18next"
-import { Keypair } from "lantah-sdk"
+import { Keypair } from "@lantah/lantah-sdk"
 import { Account, AccountsContext } from "~App/contexts/accounts"
 import { CustomError } from "~Generic/lib/errors"
 import { AccountCreation, AccountCreationErrors } from "../types/types"

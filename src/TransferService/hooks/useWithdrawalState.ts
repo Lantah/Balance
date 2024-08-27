@@ -1,5 +1,5 @@
 import BigNumber from "big.js"
-import { Horizon, Networks, Operation, Server, Transaction, xdr } from "lantah-sdk"
+import { Horizon, Networks, Operation, Server, Transaction, xdr } from "@lantah/lantah-sdk"
 import { WebauthData } from "@satoshipay/stellar-sep-10"
 import {
   fetchTransferInfos,
