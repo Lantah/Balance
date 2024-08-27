@@ -29,8 +29,8 @@ export function useDepositState(account: Account, closeDialog: () => void) {
   const WebAuth = useWebAuth()
   const { dispatch, machineState, transfer } = useTransferState(account, closeDialog)
 
-  const selectXLMDeposit = () => {
-    dispatch(Action.selectXLMDeposit())
+  const selectGRAMDeposit = () => {
+    dispatch(Action.selectGRAMDeposit())
   }
 
   const requestDeposit = async (deposit: Deposit, authToken?: string, transaction?: DepositTransaction) => {
@@ -148,7 +148,7 @@ export function useDepositState(account: Account, closeDialog: () => void) {
     didRedirectToKYC: transfer.didRedirectToKYC,
     navigateBack: transfer.navigateBack,
     performWebAuth,
-    selectXLMDeposit,
+    selectGRAMDeposit,
     submitTransferFieldValues,
     submitTransferSelection: transfer.submitTransferSelection
   }

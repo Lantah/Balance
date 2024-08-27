@@ -76,7 +76,7 @@ export const MultipleBalances = React.memo(function MultipleBalances(props: Mult
       {balances.map((balance: BalanceLine, index) => (
         <React.Fragment key={stringifyAsset(balancelineToAsset(balance))}>
           <Balance
-            assetCode={balance.asset_type === "native" ? "XLM" : balance.asset_code}
+            assetCode={balance.asset_type === "native" ? "GRAM" : balance.asset_code}
             balance={balance.balance}
             inline={props.inline}
             style={{ marginRight: index < balances.length - 1 ? "1.2em" : undefined }}
@@ -87,7 +87,7 @@ export const MultipleBalances = React.memo(function MultipleBalances(props: Mult
   )
 })
 
-const zeroXLMBalance = {
+const zeroGRAMBalance = {
   asset_type: "native",
   balance: "0"
 }
@@ -103,7 +103,7 @@ function AccountBalances(props: {
   return accountData.balances.length > 0 ? (
     <MultipleBalances balances={accountData.balances} component={props.component} onClick={props.onClick} />
   ) : (
-    <MultipleBalances balances={[zeroXLMBalance] as any} component={props.component} onClick={props.onClick} />
+    <MultipleBalances balances={[zeroGRAMBalance] as any} component={props.component} onClick={props.onClick} />
   )
 }
 

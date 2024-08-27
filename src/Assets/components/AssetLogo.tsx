@@ -27,7 +27,7 @@ const useAssetLogoStyles = makeStyles({
     background: brandColor.dark,
     border: `1px solid ${brandColor.main15}`
   },
-  xlmAvatar: {
+  gramAvatar: {
     background: "white",
     boxSizing: "border-box",
     color: "black",
@@ -58,7 +58,7 @@ function AssetLogo(props: AssetLogoProps) {
 
   if (props.asset.isNative()) {
     return (
-      <Avatar alt="Lantah Grams (GRAM)" className={`${className} ${classes.xlmAvatar}`} style={props.style}>
+      <Avatar alt="Lantah Grams (GRAM)" className={`${className} ${classes.gramAvatar}`} style={props.style}>
         <GramIcon className={classes.icon} />
       </Avatar>
     )

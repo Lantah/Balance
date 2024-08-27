@@ -169,12 +169,12 @@ function TradingForm(props: Props) {
         )
       }
 
-      const spendableXLMBalance = getSpendableBalance(
+      const spendableGRAMBalance = getSpendableBalance(
         getAccountMinimumBalance(props.accountData),
         findMatchingBalanceLine(props.accountData.balances, Asset.native())
       )
-      if (spendableXLMBalance.minus(0.5).cmp(0) <= 0) {
-        throw CustomError("LowReserveOrderError", "Cannot place order because spendable XLM balance is too low.")
+      if (spendableGRAMBalance.minus(0.5).cmp(0) <= 0) {
+        throw CustomError("LowReserveOrderError", "Cannot place order because spendable GRAM balance is too low.")
       }
 
       const tx = await createTransaction(
@@ -257,7 +257,7 @@ function TradingForm(props: Props) {
                     : t("trading.inputs.primary-asset-selector.label.sell")
                 }
                 minWidth={75}
-                showXLM
+                showGRAM
                 style={{ flexGrow: 1, marginRight: 24, maxWidth: 150, width: "25%" }}
                 testnet={props.account.testnet}
                 value={primaryAsset}
@@ -341,7 +341,7 @@ function TradingForm(props: Props) {
                     : t("trading.inputs.secondary-asset-selector.label.sell")
                 }
                 minWidth={75}
-                showXLM
+                showGRAM
                 style={{ flexGrow: 1, marginRight: 24, maxWidth: 150, width: "25%" }}
                 testnet={props.account.testnet}
                 value={secondaryAsset}

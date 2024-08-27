@@ -160,7 +160,7 @@ function DefaultTransactionSummary(props: DefaultTransactionSummaryProps) {
           <SummaryItem>
             <SummaryDetailsField
               label={t("account.transaction-review.summary.item.max-fee.label")}
-              value={<SingleBalance assetCode="XLM" balance={fee.toString()} inline />}
+              value={<SingleBalance assetCode="GRAM" balance={fee.toString()} inline />}
             />
             {transaction.created_at ? (
               <SummaryDetailsField

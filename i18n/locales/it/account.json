@@ -108,7 +108,7 @@
         "primary": "Riserva di campi dati",
         "secondary": "Campi dati dell'account"
       },
-      "headline": "Importi in XLM",
+      "headline": "Importi in GRAM",
       "open-orders-reserve": {
         "primary": "Riserva ordini aperti",
         "secondary": "Riserva per ordine"
@@ -134,7 +134,7 @@
       },
       "trustline-reserve": {
         "primary": "Riserva di fiducia",
-        "secondary": "Per ogni saldo non XLM"
+        "secondary": "Per ogni saldo non GRAM"
       }
     }
   },

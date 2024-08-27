@@ -157,7 +157,7 @@ export async function createPaymentOperation(options: PaymentOperationBlueprint)
   if (!destinationAccountExists && !Asset.native().equals(options.asset)) {
     throw CustomError(
       "NonExistentDestinationError",
-      `Cannot pay in ${asset.code}$, since the destination account does not exist yet. Account creations always need to be done via XLM.`,
+      `Cannot pay in ${asset.code}$, since the destination account does not exist yet. Account creations always need to be done via GRAM.`,
       { assetCode: asset.code }
     )
   }

@@ -42,7 +42,7 @@
       "title": "Import Existing"
     },
     "multisig-account": {
-      "explanation-long": "Make sure the account to join has at least 2 XLM on it, so they can add you as a co-signer.",
+      "explanation-long": "Make sure the account to join has at least 2 GRAM on it, so they can add you as a co-signer.",
       "explanation-short": "Make sure the account to join has been funded.",
       "helper-text": "The multi-signature account's address (public key)",
       "placeholder": "GABCDEFGH…",

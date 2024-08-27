@@ -53,7 +53,7 @@ export function balancelineToAsset(balanceline: BalanceLine): Asset {
 
 /** Reversal of stringifyAsset() */
 export function parseAssetID(assetID: string) {
-  if (assetID === "XLM") {
+  if (assetID === "GRAM") {
     return Asset.native()
   } else {
     const [issuer, code] = assetID.split(":")
@@ -72,7 +72,7 @@ export function getLiquidityPoolIdFromAsset(asset: Pick<LiquidityPoolAsset, "ass
 
 export function stringifyAssetToReadableString(asset: Asset | LiquidityPoolAsset) {
   if (asset instanceof Asset) {
-    return asset.isNative() ? "XLM" : asset.getCode()
+    return asset.isNative() ? "GRAM" : asset.getCode()
   } else {
     return `Liquidity Pool '${asset.assetA.code} <-> ${asset.assetB.code}'`
   }
@@ -81,10 +81,10 @@ export function stringifyAssetToReadableString(asset: Asset | LiquidityPoolAsset
 export function stringifyAsset(assetOrTrustline: Asset | BalanceLine) {
   if (assetOrTrustline instanceof Asset) {
     const asset: Asset = assetOrTrustline
-    return asset.isNative() ? "XLM" : `${asset.getIssuer()}:${asset.getCode()}`
+    return asset.isNative() ? "GRAM" : `${asset.getIssuer()}:${asset.getCode()}`
   } else {
     const line: BalanceLine = assetOrTrustline
-    return line.asset_type === "native" ? "XLM" : `${line.asset_issuer}:${line.asset_code}`
+    return line.asset_type === "native" ? "GRAM" : `${line.asset_issuer}:${line.asset_code}`
   }
 }
 

@@ -76,10 +76,10 @@ function createEffectHandlers(
         })
         const notificationBody = t(
           "app.notification.desktop.received-payment.body",
-          `Received ${formatBalance(paymentEffect.amount)} ${paymentEffect.asset_code || "XLM"}`,
+          `Received ${formatBalance(paymentEffect.amount)} ${paymentEffect.asset_code || "GRAM"}`,
           {
             amount: formatBalance(paymentEffect.amount),
-            assetCode: paymentEffect.asset_code || "XLM"
+            assetCode: paymentEffect.asset_code || "GRAM"
           }
         )
 

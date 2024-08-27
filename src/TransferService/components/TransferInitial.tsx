@@ -116,7 +116,7 @@ function TransferInitial(props: TransferInitialProps) {
       event.preventDefault()
 
       if (props.type === "deposit" && formValues.asset && formValues.asset.isNative()) {
-        return (actions as DepositActions).selectXLMDeposit()
+        return (actions as DepositActions).selectGRAMDeposit()
       }
 
       if (!formValues.asset) {
@@ -160,7 +160,7 @@ function TransferInitial(props: TransferInitialProps) {
           }
           margin="normal"
           onChange={handleAssetSelection}
-          showXLM={props.type === "deposit"}
+          showGRAM={props.type === "deposit"}
           testnet={account.testnet}
           value={formValues.asset || undefined}
         >

@@ -37,8 +37,8 @@ export namespace TransferStates {
     transferServer: TransferServer
   }
 
-  export interface DepositXLM {
-    step: "xlm-deposit"
+  export interface DepositGRAM {
+    step: "gram-deposit"
   }
 
   interface TransferProps {
@@ -92,9 +92,9 @@ export const Action = {
       transferServer
     } as const),
 
-  selectXLMDeposit: () =>
+  selectGRAMDeposit: () =>
     ({
-      type: "select-xlm-deposit"
+      type: "select-gram-deposit"
     } as const),
 
   captureWithdrawalInput: (formValues: { [fieldName: string]: string | undefined }) =>
@@ -180,7 +180,7 @@ export type TransferAction = ReturnType<typeof Action[keyof typeof Action]>
 export type TransferState =
   | TransferStates.SelectType
   | TransferStates.EnterBasics
-  | TransferStates.DepositXLM
+  | TransferStates.DepositGRAM
   | TransferStates.AuthPending
   | TransferStates.KYCPending<Deposit | Withdrawal>
   | TransferStates.KYCDenied
@@ -204,7 +204,7 @@ export function stateMachine(state: TransferState, action: TransferAction): Tran
           ...state,
           step: "initial"
         }
-      } else if (state.step === "xlm-deposit") {
+      } else if (state.step === "gram-deposit") {
         return {
           step: "initial",
           formValues: {}
@@ -236,9 +236,9 @@ export function stateMachine(state: TransferState, action: TransferAction): Tran
         method: action.method,
         transferServer: action.transferServer
       }
-    case "select-xlm-deposit":
+    case "select-gram-deposit":
       return {
-        step: "xlm-deposit"
+        step: "gram-deposit"
       }
     case "capture-fields":
       return {

@@ -17,7 +17,7 @@ export const bigNumberToInputValue = (bignum: BigNumber, overrides?: BalanceForm
 
 function getSpendableBalanceWithoutBaseReserve(accountMinimumBalance: BigNumber, balanceLine: BalanceLine) {
   const spendableBalance = getSpendableBalance(accountMinimumBalance, balanceLine).minus(
-    // subtract base-reserve when asset_type is native because placing a new order requires 1 * base-reserve XLM
+    // subtract base-reserve when asset_type is native because placing a new order requires 1 * base-reserve GRAM
     BigNumber(balanceLine.asset_type === "native" ? BASE_RESERVE : BigNumber(0))
   )
 

@@ -82,7 +82,7 @@ interface AssetSelectorProps {
   minWidth?: number | string
   name?: string
   onChange?: (asset: Asset) => void
-  showXLM?: boolean
+  showGRAM?: boolean
   style?: React.CSSProperties
   testnet: boolean
   value?: Asset
@@ -160,7 +160,7 @@ function AssetSelector(props: AssetSelectorProps) {
           Select an asset
         </MenuItem>
       )}
-      {props.showXLM ? (
+      {props.showGRAM ? (
         <AssetItem
           asset={Asset.native()}
           disabled={props.disabledAssets && props.disabledAssets.some(someAsset => someAsset.isNative())}

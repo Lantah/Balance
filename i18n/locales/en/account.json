@@ -108,7 +108,7 @@
         "primary": "Data fields reserve",
         "secondary": "Account data fields"
       },
-      "headline": "Amounts in XLM",
+      "headline": "Amounts in GRAM",
       "open-orders-reserve": {
         "primary": "Open orders reserve",
         "secondary": "Reserve per order"
@@ -134,7 +134,7 @@
       },
       "trustline-reserve": {
         "primary": "Trustlines reserve",
-        "secondary": "For each non-XLM balance"
+        "secondary": "For each non-GRAM balance"
       }
     }
   },
