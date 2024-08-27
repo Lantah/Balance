@@ -26,7 +26,7 @@ const dedupe = <T>(array: T[]) => Array.from(new Set(array))
 export const BASE_RESERVE = 0.5
 
 export const networkPassphrases = {
-  mainnet: "Public Global Stellar Network ; September 2015",
+  mainnet: "Public Global Lantah Network ; 2023",
   testnet: "Test SDF Network ; September 2015"
 }
 
