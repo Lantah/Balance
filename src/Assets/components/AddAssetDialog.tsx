@@ -149,7 +149,7 @@ function createSearchResultRow(
               <ListItemText
                 primary={
                   item.issuer === "native" ? (
-                    "stellar.org"
+                    "lantah.org"
                   ) : (
                     <AccountName publicKey={item.issuer} testnet={account.testnet} />
                   )

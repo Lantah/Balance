@@ -1,15 +1,14 @@
 {
-  "name": "io.solarwallet.app",
+  "name": "io.lantahbalance.app",
   "version": "0.28.1",
-  "description": "Wallet for the Stellar payment network by SatoshiPay.",
+  "description": "Wallet for the Lantah network.",
   "license": "MIT",
   "private": true,
-  "author": {
-    "name": "SatoshiPay Ltd",
-    "email": "hello@solarwallet.io"
+  "author": "SatoshiPay Ltd",
+  "contributors": "Lantah Co"
   },
-  "homepage": "https://solarwallet.io/",
-  "repository": "github:satoshipay/solar",
+  "homepage": "https://lantah.org/",
+  "repository": "github:lantah/balance",
   "main": "./electron/lib/index.prod.js",
   "scripts": {
     "precommit": "lint-staged",

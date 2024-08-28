@@ -16,7 +16,7 @@
       "deposit-pending": "Deposit pending",
       "info": {
         "1": "{{domain}} is waiting for your deposit.",
-        "2": "The funds will be credited to your Stellar account when the deposit is credited to the asset issuer."
+        "2": "The funds will be credited to your Lantah account when the deposit is credited to the asset issuer."
       }
     },
     "sidebar": {
@@ -199,7 +199,7 @@
       "withdrawal-in-progress": "Withdrawal in progress",
       "info": {
         "1": "{{domain}} is conducting the withdrawal.",
-        "2": "The funds have been deducted from your Stellar account and should be credited to the withdrawal destination shortly."
+        "2": "The funds have been deducted from your Lantah account and should be credited to the withdrawal destination shortly."
       }
     },
     "sidebar": {

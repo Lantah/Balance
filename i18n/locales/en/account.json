@@ -326,7 +326,7 @@
     },
     "validation": {
       "no-account-data": "Invariant violation: Cannot find the transaction source account's account data in set of account data subscriptions.",
-      "no-manage-data-operation": "Invariant violation: Stellar web auth transaction must contain a manage_data operation.",
+      "no-manage-data-operation": "Invariant violation: Lantah web auth transaction must contain a manage_data operation.",
       "password-required": "Password required"
     }
   },

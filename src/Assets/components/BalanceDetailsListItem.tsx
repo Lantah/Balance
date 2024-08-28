@@ -133,7 +133,7 @@ function BalanceListItem(props: BalanceListItemProps) {
               ? t("account.balance-details.item.spendable-balance.primary")
               : "Lantah Grams (GRAM)"
           }
-          secondary={props.spendableBalance ? undefined : "stellar.org"}
+          secondary={props.spendableBalance ? undefined : "lantah.org"}
         />
         <ListItemText
           classes={{

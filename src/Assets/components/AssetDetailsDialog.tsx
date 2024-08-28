@@ -373,7 +373,7 @@ function AssetDetailsDialog(props: Props) {
             {balance ? (
               <SingleBalance assetCode={asset.getCode()} balance={balance.balance} />
             ) : asset.isNative() ? (
-              "stellar.org"
+              "lantah.org"
             ) : (
               <AccountName publicKey={asset.getIssuer()} testnet={props.account.testnet} />
             )}

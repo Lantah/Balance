@@ -20,13 +20,13 @@
 
 <br />
 
-User-friendly Stellar wallet, featuring multi-signature, custom assets management and more.
+User-friendly Lantah wallet, featuring multi-signature, custom assets management and more.
 
 Runs on Mac OS, Windows, Linux, Android and iOS.
 
 ## Download
 
-See <https://github.com/satoshipay/solar/releases>. You will find the binaries there.
+See <https://github.com/lantah/balance/releases>. You will find the binaries there.
 
 ## Key security
 
