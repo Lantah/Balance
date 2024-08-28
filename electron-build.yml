@@ -1,10 +1,10 @@
 # Don't change the appId! See <https://www.electron.build/configuration/nsis#guid-vs-application-name>
-appId: io.solarwallet.app
-productName: Solar Wallet
-copyright: Copyright © 2021 SatoshiPay Ltd
+appId: io.lantahbalance.app
+productName: Lantah Balance
+copyright: Copyright © 2024 Lantah Co
 
 protocols:
-  name: Stellar transaction / payment requests URL,
+  name: Lantah transaction / payment requests URL,
   schemes: [web+stellar]
 
 directories:

@@ -1,4 +1,4 @@
-<h1 align="center">Solar Wallet</h1>
+<h1 align="center">Lantah Balance</h1>
 
 <p align="center">
   <a href="https://github.com/satoshipay/solar/releases/latest">

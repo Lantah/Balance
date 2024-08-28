@@ -12,8 +12,8 @@ interface TimestampedError {
 }
 
 const connectionErrorMessages: Record<Service, string> = {
-  HorizonPublic: "Stellar connection issue",
-  HorizonTestnet: "Stellar testnet connection issue",
+  HorizonPublic: "Lantah connection issue",
+  HorizonTestnet: "Lantah testnet connection issue",
   MultiSignature: "Multi-signature connection issue"
 }
 
