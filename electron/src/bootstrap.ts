@@ -1,6 +1,6 @@
 import { app } from "electron"
 
-// Quick-fix for "io.solarwallet.app" being shown in Mac app menu
+// Quick-fix for "io.lantahbalance.app" being shown in Mac app menu
 app.name = "Lantah Balance"
 
 // Needs to match the value in electron-build.yml

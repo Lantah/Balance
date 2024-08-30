@@ -137,7 +137,7 @@ function TradingForm(props: Props) {
   }
 
   const setPrimaryAmountToMax = () => {
-    form.setValue("primaryAmountString", maxPrimaryAmount.toFixed(7))
+    form.setValue("primaryAmountString", maxPrimaryAmount.toFixed(6))
   }
 
   const validateManualPrice = React.useCallback(() => {
@@ -181,18 +181,18 @@ function TradingForm(props: Props) {
         [
           props.primaryAction === "buy"
             ? Operation.manageBuyOffer({
-                buyAmount: primaryAmount.toFixed(7),
+                buyAmount: primaryAmount.toFixed(6),
                 buying: primaryAsset,
                 offerId: 0,
-                price: effectivePrice.toFixed(7),
+                price: effectivePrice.toFixed(6),
                 selling: secondaryAsset,
                 withMuxing: true
               })
             : Operation.manageSellOffer({
-                amount: primaryAmount.toFixed(7),
+                amount: primaryAmount.toFixed(6),
                 buying: secondaryAsset,
                 offerId: 0,
-                price: effectivePrice.toFixed(7),
+                price: effectivePrice.toFixed(6),
                 selling: primaryAsset,
                 withMuxing: true
               })
@@ -293,7 +293,7 @@ function TradingForm(props: Props) {
               pattern: "^[0-9]*(.[0-9]+)?$",
               inputMode: "decimal",
               min: "0.0000001",
-              max: maxPrimaryAmount.toFixed(7),
+              max: maxPrimaryAmount.toFixed(6),
               style: { height: 27 }
             }}
             InputProps={{

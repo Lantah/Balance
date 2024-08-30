@@ -19,7 +19,7 @@ function trimBalance(balance: BigNumber): string {
   } else if (balance.round().eq(balance)) {
     return balance.toFixed(2)
   } else {
-    return balance.toFixed(7)
+    return balance.toFixed(6)
   }
 }
 
@@ -40,7 +40,7 @@ export function formatBalance(input: BigNumber | string, options: BalanceFormatt
   const thousandsSeparator = ","
   const {
     groupThousands = true,
-    maximumDecimals = 7,
+    maximumDecimals = 6,
     maximumSignificants = 13,
     minimumDecimals = 0,
     minimumSignificants = 0

@@ -112,7 +112,7 @@
     <engine name="ios" spec="^6.1.1" />
 
     <preference name="AndroidLaunchMode" value="singleTask"/>
-    <preference name="AppendUserAgent" value="SatoshiPaySolar/$PACKAGE_VERSION" />
+    <preference name="AppendUserAgent" value="LantahBalance/$PACKAGE_VERSION" />
     <preference name="AutoHideSplashScreen" value="$AUTO_HIDE" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="HideKeyboardFormAccessoryBar" value="false" />

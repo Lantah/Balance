@@ -21,7 +21,7 @@ import { isMuxedAddress } from "./stellar-address"
 import { MultisigTransactionResponse } from "./multisig-service"
 
 /** in stroops */
-const maximumFeeToSpend = 1_000_000
+const maximumFeeToSpend = 10_000
 
 // Use a relatively high fee in case there will be a lot of traffic
 // on the network later when the tx will be submitted to the network

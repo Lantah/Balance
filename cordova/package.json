@@ -1,8 +1,8 @@
 {
-  "name": "io.solarwallet",
+  "name": "io.lantahbalance",
   "version": "0.0.0",
   "private": true,
-  "displayName": "Solar",
+  "displayName": "Balance",
   "cordova": {
     "platforms": [
       "ios",
@@ -20,7 +20,7 @@
       "cordova-plugin-device": {},
       "cordova-plugin-safariviewcontroller": {},
       "cordova-plugin-fingerprint-aio": {
-        "FACEID_USAGE_DESCRIPTION": "Unlock Solar…"
+        "FACEID_USAGE_DESCRIPTION": "Unlock Balance…"
       },
       "cordova-plugin-customurlscheme": {
         "URL_SCHEME": "web+stellar",
