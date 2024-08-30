@@ -20,8 +20,8 @@ import { getAllSources, isNotFoundError } from "./stellar"
 import { isMuxedAddress } from "./stellar-address"
 import { MultisigTransactionResponse } from "./multisig-service"
 
-/** in stroops */
-const maximumFeeToSpend = 10_000
+/** in micrograms */
+const maximumFeeToSpend = 1_000
 
 // Use a relatively high fee in case there will be a lot of traffic
 // on the network later when the tx will be submitted to the network
@@ -116,12 +116,12 @@ export async function createTransaction(operations: Array<xdr.Operation<any>>, o
       fail(`Fetching source account data timed out`)
     ),
     applyTimeout(netWorker.fetchTimebounds(horizonURL, timeout), 10000, () =>
-      fail(`Syncing time bounds with horizon timed out`)
+      fail(`Syncing time bounds with orbitr timed out`)
     )
   ] as const)
 
   if (!accountMetadata) {
-    throw Error(`Failed to query account from horizon server: ${walletAccount.publicKey}`)
+    throw Error(`Failed to query account from orbitr server: ${walletAccount.publicKey}`)
   }
 
   const account = new StellarAccount(accountMetadata.id, accountMetadata.sequence)
@@ -191,7 +191,7 @@ export async function requiresRemoteSignatures(horizon: Server, transaction: Tra
     sources.map(async sourcePublicKey => {
       const account = await netWorker.fetchAccountData(horizonURL, sourcePublicKey)
       if (!account) {
-        throw Error(`Could not fetch account metadata from horizon server: ${sourcePublicKey}`)
+        throw Error(`Could not fetch account metadata from orbitr server: ${sourcePublicKey}`)
       }
       return account
     })

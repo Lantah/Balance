@@ -78,7 +78,7 @@ function DefaultTransactionSummary(props: DefaultTransactionSummaryProps) {
 
   const fee = BigNumber(props.transaction.fee)
     .mul(props.transaction.operations.length)
-    .div(1e7)
+    .div(1e6)
 
   const isDangerousSignatureRequest = React.useMemo(() => {
     const trustedKeys = accounts.reduce<string[]>(
