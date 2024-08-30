@@ -34,7 +34,7 @@ mac:
 
 linux:
   #  must not contain a whitespace for the .desktop file
-  artifactName: Solar-Wallet-${version}.${ext}
+  artifactName: Lantah-Balance-${version}.${ext}
   category: Utility
 
 afterPack: ./scripts/electron-builder-afterpack.js

@@ -1,6 +1,6 @@
 import { Messages } from "../shared/ipc"
 
-const hideSplashScreenDelay = 500
+const hideSplashScreenDelay = 3500
 
 function handleSplashScreen() {
   if (process.env.PLATFORM === "android" || process.env.PLATFORM === "ios") {

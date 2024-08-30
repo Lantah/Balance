@@ -2,6 +2,24 @@
   <img src="SplashScreen/static/splash-logo.svg" />
   <div class="splash-caption">
     <img src="SplashScreen/static/splash-text.svg" />
-    <h3>by SatoshiPay</h3>
+<br>
+    <h3 id="changingText"></h3>
   </div>
 </div>
+
+<style>
+  @keyframes changeText {
+    0%, 3% { content: "calibrating..."; }
+    3.01%, 10% { content: "weighing grams..."; }
+    10.01%, 15% { content: "grams synced!"; }
+    15.01%, 20% { content: "decentralizing..."; }
+    20.01%, 25% { content: "web3 activated!"; }
+    25.01%, 60% { content: "opening wallet..."; }
+    60.01%, 100% { content: "taking longer than expected..."; }
+  }
+
+  #changingText::after {
+    content: "weighing grams...";
+    animation: changeText 8s infinite;
+  }
+</style>
