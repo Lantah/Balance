@@ -2,12 +2,12 @@
   <defs>
     <style>
       .cls-1 {
-        font-size: 83.333px;
+        font-size: 63.333px;
         fill: #fff;
         text-anchor: middle;
         font-family: Biysk;
       }
     </style>
   </defs>
-  <text id="balance" class="cls-1" x="149" y="61.913"><tspan x="149"></tspan></text>
+  <text id="balance" class="cls-1" x="149" y="61.913"><tspan x="149">Lantah Co</tspan></text>
 </svg>

@@ -297,7 +297,7 @@
           "label": "Expiry"
         },
         "max-fee": {
-          "label": "Maximum fee"
+          "label": "Transaction fee"
         },
         "service": {
           "label": "Service"
