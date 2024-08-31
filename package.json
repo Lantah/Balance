@@ -4,9 +4,16 @@
   "description": "Wallet for the Lantah network.",
   "license": "MIT",
   "private": true,
-  "author": "SatoshiPay Ltd",
-  "contributors": "Lantah Co"
+  "author": {
+    "name": "SatoshiPay Ltd",
+    "email": "hello@solarwallet.io"
   },
+  "contributors": [
+    {
+      "name": "Lantah Co",
+      "email": "contact@lantah.org"
+    }
+  ],
   "homepage": "https://lantah.org/",
   "repository": "github:lantah/balance",
   "main": "./electron/lib/index.prod.js",
