@@ -66,11 +66,13 @@ function AppSettings() {
             value={settings.biometricLock}
           />
         ) : null}
-        <TestnetSetting
+        {false && 
+        (<TestnetSetting
           hasTestnetAccount={hasTestnetAccount}
           onToggle={settings.toggleTestnet}
           value={settings.showTestnet || hasTestnetAccount}
         />
+      )}
         <HideMemoSetting onToggle={settings.toggleHideMemos} value={settings.hideMemos} />
         <MultiSigSetting onToggle={settings.toggleMultiSignature} value={settings.multiSignature} />
         {trustedServicesEnabled ? <TrustedServicesSetting onClick={navigateToTrustedServices} /> : undefined}
