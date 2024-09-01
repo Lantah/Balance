@@ -23,7 +23,7 @@ const SDF_FRIENDBOT_HREF = "https://friendbot.stellar.org/{?addr}"
 const dedupe = <T>(array: T[]) => Array.from(new Set(array))
 
 // FIXME: Needs to be queried from horizon
-export const BASE_RESERVE = 0.5
+export const BASE_RESERVE = 100
 
 export const networkPassphrases = {
   mainnet: "Public Global Lantah Network ; 2023",
