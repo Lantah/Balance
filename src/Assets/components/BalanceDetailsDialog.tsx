@@ -167,18 +167,6 @@ function BalanceDetailsDialog(props: BalanceDetailsProps) {
   return (
     <DialogBody excessWidth={12} top={<MainTitle onBack={props.onClose} title={props.account.name} />}>
       <List style={{ paddingLeft: hpadding, paddingRight: hpadding, margin: "0 -8px" }}>
-        <ButtonListItem
-          gutterBottom
-          onClick={openAddAssetDialog}
-          style={{
-            padding: `0 ${itemHPadding}px`,
-            marginLeft: itemHMargin,
-            marginRight: itemHMargin
-          }}
-        >
-          <AddIcon />
-          &nbsp;&nbsp;{t("account.balance-details.button.add-asset.label")}
-        </ButtonListItem>
         <TrustedAssets
           account={props.account}
           accountData={accountData}
