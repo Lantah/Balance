@@ -1,12 +1,18 @@
 {
-  "name": "stellar-wallet-web",
-  "description": "SatoshiPay wallet for the Stellar payment network.",
+  "name": "lantah-balance-web",
+  "description": "Wallet for the Lantah network.",
   "version": "0.0.0",
   "private": true,
   "author": {
-    "name": "SatoshiPay Ltd",
-    "email": "feedback@satoshipay.io"
+    "name": "Lantah Co",
+    "email": "contact@lantah.org"
   },
+  "contributors": [
+    {
+      "name": "Original Author SatoshiPay Ltd",
+      "email": "hello@solarwallet.io"
+    }
+  ],
   "scripts": {
     "prebuild": "rm -rf dist/",
     "build": "NODE_ENV=production ../node_modules/.bin/parcel build ../src/index.prod.njk --public-url=./ --detailed-report --no-source-maps",

@@ -5,13 +5,13 @@
   "license": "MIT",
   "private": true,
   "author": {
-    "name": "SatoshiPay Ltd",
-    "email": "hello@solarwallet.io"
+    "name": "Lantah Co",
+    "email": "contact@lantah.org"
   },
   "contributors": [
     {
-      "name": "Lantah Co",
-      "email": "contact@lantah.org"
+      "name": "Original Author SatoshiPay Ltd",
+      "email": "hello@solarwallet.io"
     }
   ],
   "homepage": "https://lantah.org/",
