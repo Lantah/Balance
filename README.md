@@ -29,6 +29,9 @@ Runs on Mac OS, Windows, Linux, Android and iOS.
 
 See <https://github.com/lantah/balance/releases>. You will find the binaries there.
 
+## Branches
+🏗️ This repo is under construction. For now, please use the branch v0.28.1-GRAM
+
 ## Key security
 
 Keys are encrypted with a key derived from the user's password before storing them on the local filesystem. That means that the user's secret key is safe as long as their password is strong enough. However, if they forget their password there will be no way of recovering the secret key. That's why you should always make a backup of your secret key.
