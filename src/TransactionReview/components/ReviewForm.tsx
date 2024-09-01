@@ -75,11 +75,9 @@ function TxConfirmationForm(props: Props) {
 
   const openInStellarExpert = React.useCallback(() => {
     openLink(
-      `https://stellar.expert/explorer/${
-        props.account.testnet ? "testnet" : "public"
-      }/tx/${props.transaction.hash().toString("hex")}`
-    )
-  }, [props.account.testnet, props.transaction])
+  `https://orbitr.lantah.network/transactions/${props.transaction.hash().toString("hex")}`
+);
+}, [props.transaction]);
 
   const handleTextFieldChange = React.useCallback(event => setFormValue("password", event.target.value), [])
 
