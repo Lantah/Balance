@@ -1,19 +1,20 @@
-<h1 align="center">Lantah Balance</h1>
+<h1 align="center">Balance</h1>
+<h3 align="center">Wallet for the Lantah Network</h3>
 
 <p align="center">
-  <a href="https://github.com/satoshipay/solar/releases/latest">
+  <a href="https://github.com/lantah/balance/releases/latest">
     <img alt="Latest stable release" src="https://badgen.net/github/release/satoshipay/solar/stable" />
   </a>
-  <a href="https://github.com/satoshipay/solar/releases/latest">
+  <a href="https://github.com/lantah/balance/releases/latest">
     <img alt="MacOS" src="https://badgen.net/badge/icon/MacOS?icon=apple&label&color=cyan" />
   </a>
-  <a href="https://github.com/satoshipay/solar/releases/latest">
+  <a href="https://github.com/lantah/balance/releases/latest">
     <img alt="Windows" src="https://badgen.net/badge/icon/Windows?icon=windows&label&color=cyan" />
   </a>
-  <a href="https://github.com/satoshipay/solar/releases/latest">
+  <a href="https://github.com/lantah/balance/releases/latest">
     <img alt="Android" src="https://badgen.net/badge/icon/Android?icon=googleplay&label&color=cyan" />
   </a>
-  <a href="https://github.com/satoshipay/solar/releases/latest">
+  <a href="https://github.com/lantah/balance/releases/latest">
     <img alt="iOS" src="https://badgen.net/badge/icon/iOS?icon=apple&label&color=cyan" />
   </a>
 </p>
