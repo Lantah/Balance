@@ -75,8 +75,8 @@ function TermsAndConditions(props: Props) {
               <CheckboxLabel>
                 <Trans i18nKey="app.terms-and-conditions.checkbox.2.label">
                   I have read, understood and agree to the
-                  <ExternalLink href="https://solarwallet.io/terms.html">Terms and Conditions</ExternalLink> &amp;
-                  <ExternalLink href="https://solarwallet.io/privacy.html">Privacy policy</ExternalLink> of Balance.
+                  <ExternalLink href="https://www.lantah.org/balancetermsandconditions">Terms and Conditions</ExternalLink> &amp;
+                  <ExternalLink href="https://www.lantah.org/privacypolicy">Privacy policy</ExternalLink> of Balance.
                 </Trans>
               </CheckboxLabel>
             }
