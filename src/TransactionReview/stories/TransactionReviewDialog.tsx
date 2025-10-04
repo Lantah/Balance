@@ -1,6 +1,6 @@
 import React from "react"
 import Async from "react-promise"
-import { xdr, AccountResponse, Asset, Memo, Networks, Operation, Server, TransactionBuilder } from "@lantah/lantah-sdk"
+import { xdr, AccountResponse, Asset, Memo, Networks, Operation, Server, TransactionBuilder } from "@metriq/metriq-sdk"
 import { storiesOf } from "@storybook/react"
 import { TransactionReviewDialogBody } from "../components/TransactionReviewDialog"
 import { Account } from "~App/contexts/accounts"
@@ -49,7 +49,7 @@ interface SampleWebAuthProps {
 }
 
 function SampleWebAuth(props: SampleWebAuthProps) {
-  const horizon = new Server("https://orbitr.lantah.network")
+  const horizon = new Server("https://orbitr.metriq.network")
   const WebAuth = useWebAuth()
 
   const promise = React.useMemo(

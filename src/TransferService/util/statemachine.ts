@@ -14,7 +14,7 @@ import {
   WithdrawalTransaction
 } from "@satoshipay/stellar-transfer"
 import BigNumber from "big.js"
-import { Asset, Transaction } from "@lantah/lantah-sdk"
+import { Asset, Transaction } from "@metriq/metriq-sdk"
 import { CustomError } from "~Generic/lib/errors"
 
 export namespace TransferStates {
@@ -38,7 +38,7 @@ export namespace TransferStates {
   }
 
   export interface DepositXLM {
-    step: "gram-deposit"
+    step: "MTRQ-deposit"
   }
 
   interface TransferProps {
@@ -94,7 +94,7 @@ export const Action = {
 
   selectXLMDeposit: () =>
     ({
-      type: "select-gram-deposit"
+      type: "select-MTRQ-deposit"
     } as const),
 
   captureWithdrawalInput: (formValues: { [fieldName: string]: string | undefined }) =>
@@ -180,7 +180,7 @@ export type TransferAction = ReturnType<typeof Action[keyof typeof Action]>
 export type TransferState =
   | TransferStates.SelectType
   | TransferStates.EnterBasics
-  | TransferStates.DepositGRAM
+  | TransferStates.DepositMTRQ
   | TransferStates.AuthPending
   | TransferStates.KYCPending<Deposit | Withdrawal>
   | TransferStates.KYCDenied
@@ -204,7 +204,7 @@ export function stateMachine(state: TransferState, action: TransferAction): Tran
           ...state,
           step: "initial"
         }
-      } else if (state.step === "gram-deposit") {
+      } else if (state.step === "MTRQ-deposit") {
         return {
           step: "initial",
           formValues: {}
@@ -236,9 +236,9 @@ export function stateMachine(state: TransferState, action: TransferAction): Tran
         method: action.method,
         transferServer: action.transferServer
       }
-    case "select-gram-deposit":
+    case "select-MTRQ-deposit":
       return {
-        step: "gram-deposit"
+        step: "MTRQ-deposit"
       }
     case "capture-fields":
       return {

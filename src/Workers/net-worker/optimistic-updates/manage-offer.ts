@@ -1,5 +1,5 @@
 import BigNumber from "big.js"
-import { Operation, ServerApi, Transaction } from "@lantah/lantah-sdk"
+import { Operation, ServerApi, Transaction } from "@metriq/metriq-sdk"
 import { OptimisticOfferUpdate } from "../../lib/optimistic-updates"
 
 function createOffer(

@@ -131,7 +131,7 @@ function BalanceListItem(props: BalanceListItemProps) {
           primary={
             props.spendableBalance
               ? t("account.balance-details.item.spendable-balance.primary")
-              : "Lantah Grams (GRAM)"
+              : "Metriq MTRQ (MTRQ)"
           }
           secondary={props.spendableBalance ? undefined : "stellar.org"}
         />

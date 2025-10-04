@@ -1,7 +1,7 @@
 import BigNumber from "big.js"
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { Asset, Horizon, ServerApi } from "@lantah/lantah-sdk"
+import { Asset, Horizon, ServerApi } from "@metriq/metriq-sdk"
 import Dialog from "@material-ui/core/Dialog"
 import Divider from "@material-ui/core/Divider"
 import List from "@material-ui/core/List"
@@ -85,7 +85,7 @@ const NativeBalanceItems = React.memo(function NativeBalanceItems(props: NativeB
   return (
     <>
       <BalanceDetailsListItem
-        key="GRAM"
+        key="MTRQ"
         balance={props.balance}
         onClick={() => props.onOpenAssetDetails(Asset.native())}
         style={{
@@ -97,7 +97,7 @@ const NativeBalanceItems = React.memo(function NativeBalanceItems(props: NativeB
         testnet={props.account.testnet}
       />
       <BalanceDetailsListItem
-        key="GRAM:spendable"
+        key="MTRQ:spendable"
         balance={{
           ...props.balance,
           balance: BigNumber(props.balance.balance).eq(0)

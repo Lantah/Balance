@@ -21,7 +21,7 @@ export type StellarTomlPrincipal = Partial<{
   name: string
   email: string
   keybase: string
-  telegram: string
+
   twitter: string
   github: string
   id_photo_hash: string

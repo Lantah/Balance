@@ -1,7 +1,7 @@
 /* tslint:disable:no-string-literal */
 
 import React from "react"
-import { Asset, Networks, Server, Transaction, Horizon } from "@lantah/lantah-sdk"
+import { Asset, Networks, Server, Transaction, Horizon } from "@metriq/metriq-sdk"
 import {
   SigningKeyCacheContext,
   StellarAddressCacheContext,

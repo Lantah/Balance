@@ -1,5 +1,5 @@
 import qs from "qs"
-import { Transaction } from "@lantah/lantah-sdk"
+import { Transaction } from "@metriq/metriq-sdk"
 import { signatureMatchesPublicKey } from "./stellar"
 
 export interface MultisigServerInfo {

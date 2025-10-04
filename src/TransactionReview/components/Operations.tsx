@@ -2,7 +2,7 @@ import BigNumber from "big.js"
 import { TFunction } from "i18next"
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { Asset, Operation, Transaction, Networks } from "@lantah/lantah-sdk"
+import { Asset, Operation, Transaction, Networks } from "@metriq/metriq-sdk"
 import { SingleBalance } from "~Account/components/AccountBalances"
 import { useLiveAccountOffers } from "~Generic/hooks/stellar-subscriptions"
 import { useAccountHomeDomainSafe } from "~Generic/hooks/stellar"
@@ -151,7 +151,7 @@ function CreateAccountOperation(props: OperationProps<Operation.CreateAccount>) 
       />
       <SummaryDetailsField
         label={t("operations.create-account.summary.funding-amount")}
-        value={<SingleBalance assetCode="GRAM" balance={String(startingBalance)} untrimmed />}
+        value={<SingleBalance assetCode="MTRQ" balance={String(startingBalance)} untrimmed />}
       />
       {source ? (
         <SummaryDetailsField

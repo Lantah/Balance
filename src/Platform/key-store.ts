@@ -1,4 +1,4 @@
-import { Transaction } from "@lantah/lantah-sdk"
+import { Transaction } from "@metriq/metriq-sdk"
 import { Messages } from "../shared/ipc"
 import { call } from "./ipc"
 

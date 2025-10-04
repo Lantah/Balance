@@ -56,10 +56,10 @@
     "lodash.pick": "^4.4.0",
     "nanoid": "^3.1.31",
     "react-hook-form": "^5.0.3",
-    "@lantah/lantah-sdk": "^9.0.1"
+    "@metriq/metriq-sdk": "^9.0.1"
   },
   "devDependencies": {
-    "@lantah/lantah-uri": "^3.0.1",
+    "@metriq/metriq-uri": "^3.0.1",
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.5.1",
     "@satoshipay/stellar-sep-10": "^0.3.0",

@@ -11,7 +11,7 @@ import {
   xdr,
   Networks,
   MuxedAccount
-} from "@lantah/lantah-sdk"
+} from "@metriq/metriq-sdk"
 import { Account } from "~App/contexts/accounts"
 import { workers } from "~Workers/worker-controller"
 import { WrongPasswordError, CustomError } from "./errors"
@@ -157,7 +157,7 @@ export async function createPaymentOperation(options: PaymentOperationBlueprint)
   if (!destinationAccountExists && !Asset.native().equals(options.asset)) {
     throw CustomError(
       "NonExistentDestinationError",
-      `Cannot pay in ${asset.code}$, since the destination account does not exist yet. Account creations always need to be done via GRAM.`,
+      `Cannot pay in ${asset.code}$, since the destination account does not exist yet. Account creations always need to be done via MTRQ.`,
       { assetCode: asset.code }
     )
   }

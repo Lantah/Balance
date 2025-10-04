@@ -57,7 +57,7 @@
       "deposit": {
         "headline": "Fund your account",
         "info": {
-          "1": "Purchase GRAM coins or deposit assets to fund your account.",
+          "1": "Purchase MTRQ coins or deposit assets to fund your account.",
           "2": "Balance acts as a client to the service offered by the asset issuer only."
         }
       },
@@ -102,10 +102,10 @@
   },
   "purchase-lumens": {
     "sidebar": {
-      "headline": "Buy GRAM coin",
+      "headline": "Buy MTRQ coin",
       "info": {
-        "1": "We offer options to buy GRAM that does not involve a Lantah asset issuer.",
-        "2": "GRAM is the native coin on the Lantah network. They are used to pay transaction fees, among other things."
+        "1": "We offer options to buy MTRQ that does not involve a Metriq asset issuer.",
+        "2": "MTRQ is the native coin on the Metriq network. They are used to pay transaction fees, among other things."
       }
     }
   },

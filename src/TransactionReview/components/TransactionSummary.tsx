@@ -1,7 +1,7 @@
 import BigNumber from "big.js"
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { Operation, Transaction } from "@lantah/lantah-sdk"
+import { Operation, Transaction } from "@metriq/metriq-sdk"
 import Collapse from "@material-ui/core/Collapse"
 import Divider from "@material-ui/core/Divider"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
@@ -160,7 +160,7 @@ function DefaultTransactionSummary(props: DefaultTransactionSummaryProps) {
           <SummaryItem>
             <SummaryDetailsField
               label={t("account.transaction-review.summary.item.max-fee.label")}
-              value={<SingleBalance assetCode="GRAM" balance={fee.toString()} inline />}
+              value={<SingleBalance assetCode="MTRQ" balance={fee.toString()} inline />}
             />
             {transaction.created_at ? (
               <SummaryDetailsField

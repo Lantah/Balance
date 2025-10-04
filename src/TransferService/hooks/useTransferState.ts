@@ -1,6 +1,6 @@
 import BigNumber from "big.js"
 import React from "react"
-import { Asset, Transaction } from "@lantah/lantah-sdk"
+import { Asset, Transaction } from "@metriq/metriq-sdk"
 import { getServiceSigningKey, getWebAuthEndpointURL, WebauthData } from "@satoshipay/stellar-sep-10"
 import { fetchTransaction, fetchTransferInfos, TransferServer } from "@satoshipay/stellar-transfer"
 import { Account } from "~App/contexts/accounts"

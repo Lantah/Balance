@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid"
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { Asset } from "@lantah/lantah-sdk"
+import { Asset } from "@metriq/metriq-sdk"
 import Collapse from "@material-ui/core/Collapse"
 import MenuItem from "@material-ui/core/MenuItem"
 import TextField from "@material-ui/core/TextField"

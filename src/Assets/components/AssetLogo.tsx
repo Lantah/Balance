@@ -1,5 +1,5 @@
 import React from "react"
-import { Asset } from "@lantah/lantah-sdk"
+import { Asset } from "@metriq/metriq-sdk"
 import Avatar from "@material-ui/core/Avatar"
 import makeStyles from "@material-ui/core/styles/makeStyles"
 import { useAssetMetadata } from "~Generic/hooks/stellar"
@@ -58,7 +58,7 @@ function AssetLogo(props: AssetLogoProps) {
 
   if (props.asset.isNative()) {
     return (
-      <Avatar alt="Lantah Grams (GRAM)" className={`${className} ${classes.xlmAvatar}`} style={props.style}>
+      <Avatar alt="Metriq MTRQ (MTRQ)" className={`${className} ${classes.xlmAvatar}`} style={props.style}>
         <LumenIcon className={classes.icon} />
       </Avatar>
     )

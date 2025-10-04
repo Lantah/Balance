@@ -404,7 +404,7 @@ const AccountPageContent = React.memo(function AccountPageContent(props: Account
             <React.Suspense fallback={<ViewLoading />}>
               <AssetDetailsDialog
                 account={props.account}
-                assetID={showAssetDetails ? getLastArgumentFromURL(router.location.pathname) : "GRAM"}
+                assetID={showAssetDetails ? getLastArgumentFromURL(router.location.pathname) : "MTRQ"}
                 onClose={closeAssetDetails}
               />
             </React.Suspense>

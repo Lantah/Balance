@@ -2,8 +2,8 @@ import BigNumber from "big.js"
 import { TFunction } from "i18next"
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { Asset, ServerApi } from "@lantah/lantah-sdk"
-import { Trade } from "lantah-sdk/lib/types/trade"
+import { Asset, ServerApi } from "@metriq/metriq-sdk"
+import { Trade } from "metriq-sdk/lib/types/trade"
 import { useHorizonURLs } from "~Generic/hooks/stellar"
 import { useLiveAccountEffects } from "~Generic/hooks/stellar-subscriptions"
 import { useRouter } from "~Generic/hooks/userinterface"
@@ -18,7 +18,7 @@ import { Account, AccountsContext } from "../contexts/accounts"
 import { trackError } from "../contexts/notifications"
 import { SignatureDelegationContext } from "../contexts/signatureDelegation"
 import * as routes from "../routes"
-import { AccountCredited } from "lantah-sdk/lib/types/effects"
+import { AccountCredited } from "metriq-sdk/lib/types/effects"
 
 const isTradeEffect = (effect: ServerApi.EffectRecord): effect is Trade => effect.type === "trade"
 const isPaymentEffect = (effect: ServerApi.EffectRecord) =>
@@ -76,10 +76,10 @@ function createEffectHandlers(
         })
         const notificationBody = t(
           "app.notification.desktop.received-payment.body",
-          `Received ${formatBalance(paymentEffect.amount)} ${paymentEffect.asset_code || "GRAM"}`,
+          `Received ${formatBalance(paymentEffect.amount)} ${paymentEffect.asset_code || "MTRQ"}`,
           {
             amount: formatBalance(paymentEffect.amount),
-            assetCode: paymentEffect.asset_code || "GRAM"
+            assetCode: paymentEffect.asset_code || "MTRQ"
           }
         )
 

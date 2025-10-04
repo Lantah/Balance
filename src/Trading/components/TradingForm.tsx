@@ -1,7 +1,7 @@
 import React from "react"
 import { Controller, useForm } from "react-hook-form"
 import { useTranslation } from "react-i18next"
-import { Asset, Horizon, Operation, Transaction } from "@lantah/lantah-sdk"
+import { Asset, Horizon, Operation, Transaction } from "@metriq/metriq-sdk"
 import Button from "@material-ui/core/Button"
 import ExpansionPanel from "@material-ui/core/ExpansionPanel"
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails"
@@ -174,7 +174,7 @@ function TradingForm(props: Props) {
         findMatchingBalanceLine(props.accountData.balances, Asset.native())
       )
       if (spendableXLMBalance.minus(0.5).cmp(0) <= 0) {
-        throw CustomError("LowReserveOrderError", "Cannot place order because spendable GRAM balance is too low.")
+        throw CustomError("LowReserveOrderError", "Cannot place order because spendable MTRQ balance is too low.")
       }
 
       const tx = await createTransaction(

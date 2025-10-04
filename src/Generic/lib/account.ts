@@ -1,4 +1,4 @@
-import { AccountResponse, Horizon } from "@lantah/lantah-sdk"
+import { AccountResponse, Horizon } from "@metriq/metriq-sdk"
 
 // Horizon.BalanceLine without Horizon.BalanceLineLiquidityPool
 export type BalanceLine = Horizon.BalanceLineAsset | Horizon.BalanceLineNative

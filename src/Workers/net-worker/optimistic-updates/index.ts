@@ -1,4 +1,4 @@
-import { Horizon, Operation, ServerApi, Transaction } from "@lantah/lantah-sdk"
+import { Horizon, Operation, ServerApi, Transaction } from "@metriq/metriq-sdk"
 import {
   accountDataUpdates,
   offerUpdates,

@@ -1,6 +1,6 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { Asset, AssetType, Horizon, Operation, Server, Transaction } from "@lantah/lantah-sdk"
+import { Asset, AssetType, Horizon, Operation, Server, Transaction } from "@metriq/metriq-sdk"
 import Dialog from "@material-ui/core/Dialog"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"

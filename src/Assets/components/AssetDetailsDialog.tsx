@@ -1,6 +1,6 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { Asset } from "@lantah/lantah-sdk"
+import { Asset } from "@metriq/metriq-sdk"
 import Avatar from "@material-ui/core/Avatar"
 import Card from "@material-ui/core/Card"
 import CardContent from "@material-ui/core/CardContent"
@@ -359,7 +359,7 @@ function AssetDetailsDialog(props: Props) {
             style={{ position: "relative", zIndex: 1 }}
             title={
               asset.isNative()
-                ? "Lantah Grams (GRAM)"
+                ? "Metriq MTRQ (MTRQ)"
                 : metadata && metadata.name
                 ? `${metadata.name} (${asset.getCode()})`
                 : asset.getCode()

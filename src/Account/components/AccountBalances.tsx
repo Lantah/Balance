@@ -76,7 +76,7 @@ export const MultipleBalances = React.memo(function MultipleBalances(props: Mult
       {balances.map((balance: BalanceLine, index) => (
         <React.Fragment key={stringifyAsset(balancelineToAsset(balance))}>
           <Balance
-            assetCode={balance.asset_type === "native" ? "GRAM" : balance.asset_code}
+            assetCode={balance.asset_type === "native" ? "MTRQ" : balance.asset_code}
             balance={balance.balance}
             inline={props.inline}
             style={{ marginRight: index < balances.length - 1 ? "1.2em" : undefined }}

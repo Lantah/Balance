@@ -10,8 +10,8 @@ import {
   Transaction,
   LiquidityPoolAsset,
   getLiquidityPoolId
-} from "@lantah/lantah-sdk"
-import { OfferAsset } from "lantah-sdk/lib/types/offer"
+} from "@metriq/metriq-sdk"
+import { OfferAsset } from "metriq-sdk/lib/types/offer"
 import { AssetRecord } from "../hooks/stellar-ecosystem"
 import { AccountData, BalanceLine } from "./account"
 
@@ -37,7 +37,7 @@ export function getAllSources(tx: Transaction) {
   ])
 }
 
-// FIXME: Wait for proper solution in lantah-sdk: <https://github.com/stellar/js-lantah-sdk/pull/403>
+// FIXME: Wait for proper solution in metriq-sdk: <https://github.com/stellar/js-metriq-sdk/pull/403>
 export function isNotFoundError(error: any): error is NotFoundError {
   return (
     (error && error instanceof Error && error.message === "Request failed with status code 404") ||
@@ -53,7 +53,7 @@ export function balancelineToAsset(balanceline: BalanceLine): Asset {
 
 /** Reversal of stringifyAsset() */
 export function parseAssetID(assetID: string) {
-  if (assetID === "GRAM") {
+  if (assetID === "MTRQ") {
     return Asset.native()
   } else {
     const [issuer, code] = assetID.split(":")
@@ -72,7 +72,7 @@ export function getLiquidityPoolIdFromAsset(asset: Pick<LiquidityPoolAsset, "ass
 
 export function stringifyAssetToReadableString(asset: Asset | LiquidityPoolAsset) {
   if (asset instanceof Asset) {
-    return asset.isNative() ? "GRAM" : asset.getCode()
+    return asset.isNative() ? "MTRQ" : asset.getCode()
   } else {
     return `Liquidity Pool '${asset.assetA.code} <-> ${asset.assetB.code}'`
   }
@@ -81,10 +81,10 @@ export function stringifyAssetToReadableString(asset: Asset | LiquidityPoolAsset
 export function stringifyAsset(assetOrTrustline: Asset | BalanceLine) {
   if (assetOrTrustline instanceof Asset) {
     const asset: Asset = assetOrTrustline
-    return asset.isNative() ? "GRAM" : `${asset.getIssuer()}:${asset.getCode()}`
+    return asset.isNative() ? "MTRQ" : `${asset.getIssuer()}:${asset.getCode()}`
   } else {
     const line: BalanceLine = assetOrTrustline
-    return line.asset_type === "native" ? "GRAM" : `${line.asset_issuer}:${line.asset_code}`
+    return line.asset_type === "native" ? "MTRQ" : `${line.asset_issuer}:${line.asset_code}`
   }
 }
 
